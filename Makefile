@@ -37,8 +37,6 @@ lint: ## Runs all lint tests
 	bundle exec rubocop --parallel
 	@echo "--- brakeman ---"
 	bundle exec brakeman
-	@echo "--- zeitwerk check ---"
-	bin/rails zeitwerk:check
 	@echo "--- bundler-audit ---"
 	bundle exec bundler-audit check --update
 	# JavaScript
