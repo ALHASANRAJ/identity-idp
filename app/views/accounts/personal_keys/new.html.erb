@@ -1,6 +1,6 @@
 <% title(t('account.personal_key.get_new')) %>
 
-<h1><%= t('account.personal_key.get_new') %></h1>
+<h1 class="margin-top-0"><%= t('account.personal_key.get_new') %></h1>
 
 <p class="margin-top-4">
   <%= t('account.personal_key.get_new_description') %>
@@ -14,8 +14,4 @@
 <% end %>
 
 
-<div class="margin-top-4 border-top border-primary-light">
-  <div class="margin-top-1">
-    <%= link_to(t('links.cancel'), account_path) %>
-  </div>
-</div>
+<%= render 'shared/cancel', link: account_path %>
