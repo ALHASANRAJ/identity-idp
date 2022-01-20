@@ -1,8 +1,6 @@
 <% title t('titles.enter_2fa_code') %>
 
-<h1 class="margin-y-0">
-  <%= @presenter.header %>
-</h1>
+<%= render PageHeadingComponent.new.with_content(@presenter.header) %>
 
 <%= validated_form_for(:login_two_factor_authenticator, method: :post, class: 'margin-top-4 tablet:margin-top-6') do %>
   <% if @presenter.reauthn %>
